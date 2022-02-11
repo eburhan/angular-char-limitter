@@ -1,0 +1,30 @@
+/**
+ * "char-limitter" isimli direktife ait biçimlendirmeler
+* ------------------------------------------------------------------------- */
+.char-limitter-input {
+  resize: none !important;
+}
+
+/* kalan karakter yazsının göründüğü metin */
+.char-limitter {
+  color: black;
+  text-align: right;
+  font-size: 80%;
+  font-style: italic;
+}
+
+/* yazma hakkı bittiğinde, KalanKarakter metnine uygulanacak olan class*/
+.char-limitter-over {
+  color: red;
+}
+
+/* yanıp sönme efekti */
+.char-limitter-over-flush {
+  animation: flash 1.5s ease infinite alternate;
+}
+
+@keyframes flash {
+  50% {
+    opacity: 0;
+  }
+}
